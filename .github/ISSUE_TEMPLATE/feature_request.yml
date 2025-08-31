@@ -1,0 +1,55 @@
+name: "Feature request"
+description: "Sugira uma nova funcionalidade ou melhoria"
+title: "[Feature]: Descreva a ideia"
+labels: ["enhancement", "idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por sugerir uma melhoria! Conte-nos o problema, a solução proposta e critérios de aceitação.
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: "Problema a ser resolvido"
+      description: "Qual a necessidade do usuário ou dor atual?"
+      placeholder: "Como recepcionista, preciso..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposta
+    attributes:
+      label: "Proposta de solução"
+      description: "Descreva a funcionalidade desejada e como deve funcionar."
+      placeholder: "Adicionar botão X na aba Y que..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: criterios
+    attributes:
+      label: "Critérios de aceitação"
+      description: "Lista objetiva do que deve estar pronto para considerar a tarefa concluída."
+      placeholder: "- Usuário consegue...
+- Dados são salvos...
+- Mensagem de sucesso exibida..."
+
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: "Alternativas consideradas"
+      description: "Outras abordagens possíveis e por que foram descartadas."
+
+  - type: textarea
+    id: impactos
+    attributes:
+      label: "Impactos/Dependências"
+      description: "Impactos técnicos, migrações de dados, mudanças na UI, etc."
+
+  - type: input
+    id: mockups
+    attributes:
+      label: "Mockups/Referências (opcional)"
+      description: "Links para imagens, desenhos ou sistemas de referência."
+

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Documentação / README"
+    url: "https://github.com/matheussiqueirahub/Ref-gio_dos_Sonhos/blob/main/Refugio_dos_Sonhos/README.md"
+    about: "Informações de uso, estrutura e requisitos."
+  - name: "Roadmap"
+    url: "https://github.com/matheussiqueirahub/Ref-gio_dos_Sonhos/blob/main/Refugio_dos_Sonhos/ROADMAP.md"
+    about: "Lista de próximos passos e melhorias sugeridas."

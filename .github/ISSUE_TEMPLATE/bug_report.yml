@@ -1,0 +1,64 @@
+name: "Bug report"
+description: "Reporte um erro no sistema"
+title: "[Bug]: Descreva o problema"
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar um problema no Refúgio dos Sonhos.
+        Preencha as informações abaixo para facilitar a investigação.
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: "Descrição"
+      description: "Explique o que aconteceu e qual era o resultado esperado."
+      placeholder: "Ao clicar em Criar Reserva, ocorreu..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: passos
+    attributes:
+      label: "Passos para reproduzir"
+      description: "Liste os passos para reproduzir o problema."
+      placeholder: |
+        1. Vá para '...'
+        2. Clique em '...'
+        3. Selecione '...'
+        4. Observe o erro
+    validations:
+      required: true
+
+  - type: input
+    id: versao
+    attributes:
+      label: "Versão/commit"
+      description: "Informe a versão ou o commit (ex.: `git rev-parse --short HEAD`)."
+      placeholder: "ex.: 1e7a7bd"
+
+  - type: input
+    id: ambiente
+    attributes:
+      label: "Ambiente"
+      description: "Sistema operacional, versão do Python, etc."
+      placeholder: "Windows 11, Python 3.12"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs e screenshots"
+      description: "Cole mensagens de erro relevantes, logs ou anexe imagens."
+      render: bash
+
+  - type: checkboxes
+    id: confirmacoes
+    attributes:
+      label: "Confirmações"
+      options:
+        - label: "Pesquisei issues existentes e não encontrei um duplicado."
+          required: true
+        - label: "Consultei o README/ROADMAP para comportamento esperado."
+          required: false
+
