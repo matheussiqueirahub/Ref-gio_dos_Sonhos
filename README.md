@@ -33,6 +33,9 @@ python app.py
   - `storage.py`: persistência em JSON
 - `data/`: arquivos JSON persistidos
 
+## Roadmap
+Consulte `ROADMAP.md` para melhorias sugeridas e próximos passos.
+
 ## Observações
 - Dados são salvos automaticamente ao criar/editar/cancelar.
 - Datas no formato `DD/MM/AAAA` no UI.
